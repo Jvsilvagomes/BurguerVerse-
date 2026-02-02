@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+header, nav, .hero, .produtos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.BurguerVerse{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: red;
+    color: white;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+}
+
+nav{
+    gap: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+@media (max-width: 425px) {
+    nav a {
+        font-size: 0.75rem;
+    }
+}
+
+main {
+    padding: 2rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: red;
+}
+
+main p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.hero{
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 500px;
+    min-width: 300px;
+    border-radius: 12px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: red;
+}
+
+.hero-text p{
+    font-size: 1.1rem;
+    text-align: justify;
+    font-style: italic;
+}
+
+.hero-text ul{
+    text-align: left;
+    margin: 0 0 2rem 2rem
+}
+
+li{
+    margin-bottom: 0.5rem;
+}
+
+.obs {
+    color: gray;
+}
+
+.produtos {
+   gap: 1.5rem;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+.gray{
+    background-color: gray;
+    color: white;
+}
+.brown{
+    background-color: brown;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.purple{
+    background-color: purple;
+    color: white;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
